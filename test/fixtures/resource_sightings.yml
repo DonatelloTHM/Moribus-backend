@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  latlon: 
+  user: one
+  resource: one
+  park: one
+  photo: MyString
+
+two:
+  latlon: 
+  user: two
+  resource: two
+  park: two
+  photo: MyString
