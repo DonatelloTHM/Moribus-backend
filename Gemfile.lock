@@ -98,6 +98,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jsonapi-renderer (0.2.2)
     jwt (1.5.6)
+    left_join (0.2.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -251,6 +252,7 @@ DEPENDENCIES
   cloudinary
   hirb
   jwt
+  left_join
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)

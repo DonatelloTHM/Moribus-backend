@@ -18,8 +18,8 @@ class ParksController < ApplicationController
             @parks = @parks.left_joins(:animal_sightings).group(:id).order('COUNT(animal_sightings.id) DESC')
         when "least"
             @parks = @parks.left_joins(:animal_sightings).group(:id).order('COUNT(animal_sightings.id) ASC')
-        when "resource"
-            @parks = @parks.sort_by{|park| park.resource_sightings.length}
+        # when "resource"
+        #     @parks = @parks.sort_by{|park| park.resource_sightings.length}
         else
             @parks = @parks.order("ST_Distance(latlon, ST_GeomFromText('#{user_location.as_text}', #{4326}))")
         end

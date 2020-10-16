@@ -5,7 +5,7 @@ class Park < ApplicationRecord
     
     scope :filter_by_phrase, ->(phrase) { where('name ILIKE ?', "%#{phrase}%") }
 
-
+    
 
     def overall_rating
         self.reviews.average(:rating).to_f.round(2)
